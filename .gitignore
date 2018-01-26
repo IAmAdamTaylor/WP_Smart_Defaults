@@ -1,0 +1,6 @@
+# Ignore Mac hidden files
+.AppleDouble
+.DS_Store
+
+# Ignore server side files
+.htaccess

@@ -1,0 +1,24 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/* In a custom frame, the date picker can sometimes collapse. This fixes that. */
+#media-attachment-date-filters {
+	min-width: 200px;
+}
+
+#wpsmartdefaults_upload_logo_preview {
+	display: block;
+	width: 320px;
+	max-width: 100%;
+	height: auto;
+}
+
+#wpsmartdefaults_logo_width {
+	width: 100px;
+}
+
+#form-wpsmartdefaults-options p {
+	max-width: 50em;
+}
