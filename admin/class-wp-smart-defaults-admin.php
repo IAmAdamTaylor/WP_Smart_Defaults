@@ -207,7 +207,7 @@ class WP_Smart_Defaults_Admin {
 	 */
 	public function render_favicon_section_header_text() {
 		?><p>
-			We recommended that you use a recolored version of the main website favicon (e.g. with a red color overlay) to make it easy to differentiate between front end and admin tabs.
+			We recommend that you use a recolored version of the main website favicon (e.g. with a red color overlay) to make it easy to differentiate between front end and admin tabs.
 		</p>
 		<p>
 			If a favicon is not added here, a default favicon will be used.
