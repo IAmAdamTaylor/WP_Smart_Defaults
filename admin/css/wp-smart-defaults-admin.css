@@ -22,3 +22,14 @@
 #form-wpsmartdefaults-options p {
 	max-width: 50em;
 }
+
+/* Style custom columns added to post table */
+.post-type-post .wp-list-table.fixed {
+  table-layout: initial !important;
+}
+.post-type-post .wp-list-table.fixed #post_thumbnail {
+  width: 75px;
+}
+.post-type-post .wp-list-table.fixed #title {
+  width: 200px;
+}
