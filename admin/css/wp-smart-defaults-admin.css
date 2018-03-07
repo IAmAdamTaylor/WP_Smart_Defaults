@@ -3,6 +3,11 @@
  * included in this file.
  */
 
+/* New alt column in media library */
+.fixed .column-alt {
+	width: 20%;
+}
+
 /* In a custom frame, the date picker can sometimes collapse. This fixes that. */
 #media-attachment-date-filters {
 	min-width: 200px;

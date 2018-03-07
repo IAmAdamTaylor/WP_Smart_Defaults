@@ -158,6 +158,7 @@ class WP_Smart_Defaults {
 		$enabled_extensions->admin_custom_columns = apply_filters( 'wpsmartdefaults_enable_admin_custom_columns', true );
 		$enabled_extensions->pages_custom_columns = apply_filters( 'wpsmartdefaults_enable_pages_custom_columns', true );
 		$enabled_extensions->posts_custom_columns = apply_filters( 'wpsmartdefaults_enable_posts_custom_columns', true );
+		$enabled_extensions->media_custom_columns = apply_filters( 'wpsmartdefaults_enable_media_custom_columns', true );
 
 		$enabled_extensions->login_link_url = apply_filters( 'wpsmartdefaults_enable_login_link_url', true );
 		$enabled_extensions->login_link_title = apply_filters( 'wpsmartdefaults_enable_login_link_title', true );
@@ -262,6 +263,14 @@ class WP_Smart_Defaults {
 			$this->loader->add_filter( 'manage_edit-post_columns', $plugin_admin, 'add_post_columns' );
 			$this->loader->add_action( 'manage_posts_custom_column', $plugin_admin, 'add_post_columns_data', 20, 2 );
 
+		}
+
+		if ( 
+			$enabled_extensions->admin_custom_columns &&
+			$enabled_extensions->media_custom_columns 
+		) {
+			$this->loader->add_filter( 'manage_media_columns', $plugin_admin, 'add_media_columns' );
+			$this->loader->add_action( 'manage_media_custom_column', $plugin_admin, 'add_media_columns_data', 20, 2 );
 		}
 
 	}
