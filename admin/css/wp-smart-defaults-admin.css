@@ -33,7 +33,7 @@
   table-layout: initial !important;
 }
 .post-type-post .wp-list-table.fixed #post_thumbnail {
-  width: 75px;
+  width: 150px;
 }
 .post-type-post .wp-list-table.fixed #title {
   width: 200px;

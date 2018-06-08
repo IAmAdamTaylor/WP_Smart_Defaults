@@ -563,7 +563,7 @@ class WP_Smart_Defaults_Admin {
 	          ?>
 	          
 	          <a href="<?php echo get_the_permalink( $post_id ); ?>">
-	            <img <?php echo $this->get_image_attributes( $thumbnail_id, 'thumbnail' ); ?> style="display:block; max-width:100%; width:75px; height:auto;" >
+	            <img <?php echo $this->get_image_attributes( $thumbnail_id, 'thumbnail' ); ?> style="display:block; max-width:100%; width:150px; height:auto;" >
 	          </a>
 
 	          <?php
