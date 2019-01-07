@@ -66,7 +66,9 @@ class WP_Smart_Defaults_Public {
 	}
 
 	public function remove_script_version( $src ) {
-		$src = remove_query_arg( 'ver', $src );
+		if ( !is_admin() ) {
+			$src = remove_query_arg( 'ver', $src );
+		}
 		
 		return $src;
 	}
